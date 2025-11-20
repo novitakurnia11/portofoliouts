@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Maria Novita Kurnia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#b38b6d; --white:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071027 0%, #0f1724 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:40px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .logo{width:84px;height:84px;flex:0 0 84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7a5a45);display:flex;align-items:center;justify-content:center;font-family:Playfair Display;font-size:20px}
+    h1{margin:0;font-family:Playfair Display;font-size:34px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .about h2{margin-top:0;font-family:Playfair Display}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .stats{display:flex;gap:12px;margin-top:14px}
+    .stat{flex:1;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:12px;text-align:center}
+    .stat b{display:block;font-size:20px}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .portfolio-item{height:140px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));display:flex;align-items:flex-end;padding:12px}
+    .portfolio-item h3{margin:0;font-size:14px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:14px}
+    a.cta{display:inline-block;background:var(--accent);color:var(--white);padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:600}
+    .contact-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .contact-item{color:var(--muted)}
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.portfolio-grid{grid-template-columns:repeat(2,1fr)}.logo{width:64px;height:64px}}
+    @media (max-width:520px){.portfolio-grid{grid-template-columns:1fr}.services{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MNK</div>
+      <div>
+        <h1>Maria Novita Kurnia</h1>
+        <p class="lead">Fashion Entrepreneur • Creative Director • Luxury & Sustainable Fashion</p>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <a class="cta" href="#contact">Hire Me</a>
+        <div style="color:var(--muted);font-size:13px;margin-top:6px">Jakarta, Indonesia</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card about">
+          <h2>Tentang Saya</h2>
+          <p style="color:var(--muted)">Saya adalah seorang pengusaha fashion dan freelance stylist yang berfokus pada desain mewah, kualitas tinggi, dan storytelling visual. Berpengalaman dalam membangun brand, mengelola butik, serta merancang koleksi yang timeless dan berkelanjutan.</p>
+
+          <div class="skills">
+            <div class="skill">Luxury Branding</div>
+            <div class="skill">Creative Direction</div>
+            <div class="skill">Personal Styling</div>
+            <div class="skill">Product Design</div>
+            <div class="skill">Retail Management</div>
+            <div class="skill">Content Strategy</div>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><b>8+</b><span style="color:var(--muted)">Tahun pengalaman</span></div>
+            <div class="stat"><b>4</b><span style="color:var(--muted)">Stores & Pop-ups</span></div>
+            <div class="stat"><b>250+</b><span style="color:var(--muted)">Client tersenyum</span></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 style="margin:0 0 8px 0">Layanan Utama</h3>
+          <div class="services">
+            <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)"><strong>Personal Styling</strong><div style="color:var(--muted);margin-top:6px">Styling event, wardrobe curation, VIP clients</div></div>
+            <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)"><strong>Custom Couture</strong><div style="color:var(--muted);margin-top:6px">Gaun eksklusif & made-to-measure</div></div>
+            <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)"><strong>Creative Direction</strong><div style="color:var(--muted);margin-top:6px">Lookbook, editorial, campaign</div></div>
+            <div style="padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)"><strong>Brand Consultancy</strong><div style="color:var(--muted);margin-top:6px">Strategy, retail expansion, product line-up</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="text-align:center">
+          <div style="height:220px;border-radius:12px;background:linear-gradient(180deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center">
+            <div style="color:var(--muted)">Photo Placeholder</div>
+          </div>
+          <h3 style="margin:12px 0 6px 0">Maria Novita Kurnia</h3>
+          <div style="color:var(--muted);font-size:14px">Founder — MNK Atelier & Maison</div>
+          <div class="contact-list">
+            <div class="contact-item">Email: maria@mnkatelier.com</div>
+            <div class="contact-item">WA: +62 812-3456-7890</div>
+            <div class="contact-item">Instagram: @maria.n.kurnia</div>
+          </div>
+          <a class="cta" href="#contact" style="margin-top:12px;display:inline-block">Book Consultation</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4 style="margin:0">Prestasi & Liputan</h4>
+          <ul style="color:var(--muted);margin-top:8px;padding-left:18px">
+            <li>Featured — Majalah Fashion Indonesia</li>
+            <li>Guest Designer — Jakarta Fashion Week</li>
+            <li>Kolaborasi dengan brand internasional</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Portofolio Terpilih</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item"><h3>Golden Elegance — Editorial</h3></div>
+        <div class="portfolio-item"><h3>Timeless Ivory — Lookbook</h3></div>
+        <div class="portfolio-item"><h3>Urban Luxe — Campaign</h3></div>
+        <div class="portfolio-item"><h3>Custom Bridal — Couture</h3></div>
+        <div class="portfolio-item"><h3>Accessories Capsule</h3></div>
+        <div class="portfolio-item"><h3>Pop-Up Bali — Retail</h3></div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Hubungi Saya</h2>
+      <p style="color:var(--muted)">Untuk kerjasama, pemesanan custom, atau konsultasi brand, silakan hubungi kontak di bawah.</p>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+        <form style="display:flex;flex-direction:column;gap:10px">
+          <input placeholder="Nama" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:var(--white)" />
+          <input placeholder="Email" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:var(--white)" />
+          <textarea placeholder="Pesan" rows="4" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:var(--white)"></textarea>
+          <button style="padding:10px;border-radius:10px;border:0;background:var(--accent);color:var(--white);font-weight:600">Kirim Pesan</button>
+        </form>
+        <div>
+          <h4 style="margin:0">Kontak Bisnis</h4>
+          <div style="color:var(--muted);margin-top:8px">Email: maria@mnkatelier.com</div>
+          <div style="color:var(--muted);">WA: +62 812-3456-7890</div>
+          <div style="color:var(--muted);">Alamat: Jakarta, Indonesia</div>
+
+          <h4 style="margin-top:14px;margin-bottom:6px">Jam Operasional</h4>
+          <div style="color:var(--muted);">Sen–Sab: 09:00 – 18:00</div>
+          <div style="color:var(--muted);">Minggu: Tutup / By Appointment</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <strong>Maria Novita Kurnia</strong> — Fashion Entrepreneur & Creative Director • All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
